@@ -1,0 +1,21 @@
+inlcude irvine32.inc
+
+
+.data
+	byte1 byte 38h
+	byte2 byte 46h
+	byte3 byte 0ffh
+
+
+.code
+
+main proc
+
+	xor eax,eax
+	mov al,byte1
+	shr al,2
+	call writeint
+
+	exit
+main endp
+end main
